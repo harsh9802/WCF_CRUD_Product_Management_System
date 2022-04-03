@@ -1,0 +1,7 @@
+C:\Users\Hp\source\repos\Product_Service\obj\Debug\Product_Service.csproj.AssemblyReference.cache
+C:\Users\Hp\source\repos\Product_Service\obj\Debug\Product_Service.csproj.CoreCompileInputs.cache
+C:\Users\Hp\source\repos\Product_Service\bin\Product_Service.dll.config
+C:\Users\Hp\source\repos\Product_Service\bin\Product_Service.dll
+C:\Users\Hp\source\repos\Product_Service\bin\Product_Service.pdb
+C:\Users\Hp\source\repos\Product_Service\obj\Debug\Product_Service.dll
+C:\Users\Hp\source\repos\Product_Service\obj\Debug\Product_Service.pdb

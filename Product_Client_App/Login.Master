@@ -1,0 +1,139 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Login.master.cs" Inherits="Product_Client_App.Login" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style2 {
+            width: 231px;
+        }
+        .auto-style9 {
+            width: 653px;
+            text-align: center;
+        }
+        .auto-style11 {
+            width: 653px;
+        }
+        .auto-style12 {
+            width: 653px;
+            text-align: right;
+            height: 13px;
+        }
+        .auto-style13 {
+            width: 231px;
+            text-align: left;
+            height: 13px;
+        }
+        .auto-style14 {
+            height: 13px;
+            width: 923px;
+        }
+        .auto-style16 {
+            width: 231px;
+            text-align: left;
+            
+        }
+        .auto-style17 {
+            width: 100%;
+           
+        }
+        .auto-style18 {
+            width: 923px;
+        }
+        .auto-style19 {
+            color: #FF0000;
+        }
+        .auto-style20 {
+            width: 653px;
+            height: 33px;
+        }
+        .auto-style21 {
+            width: 231px;
+            height: 33px;
+        }
+        .auto-style22 {
+            width: 923px;
+            height: 33px;
+        }
+        .auto-style23 {
+            color: #FFFFFF;
+        }
+        .auto-style24 {
+            color: #FF6600;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <center>
+        <div >  
+            <table class="auto-style17">  
+                <tr>  
+                    <td class="auto-style9">  
+                        &nbsp;</td>  
+                    <td class="auto-style16">  
+                        <span class="auto-style24">  
+                        <strong>Login Form</strong></span>  
+                    </td>  
+                    </div>
+                    <td class="auto-style18">  
+                        &nbsp;</td>  
+                </tr>  
+                <tr>  
+                    
+                    <td class="auto-style12">  
+                        Username<strong>:</strong></td>  
+                    <td class="auto-style13">  
+                        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>  
+                    </td>  
+                    <td class="auto-style14">  
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server"   
+ControlToValidate="TextBox1" ErrorMessage="*Username cannot be empty"   
+ForeColor="Red" EnableViewState="False"></asp:RequiredFieldValidator>  
+                    </td>
+                </tr>  
+                <tr>  
+                   
+                    <td class="auto-style12">  
+Password:</td>  
+                    <td class="auto-style13">  
+                        <asp:TextBox ID="TextBox2" runat="server" TextMode="Password"></asp:TextBox>  
+                    </td>  
+                    <td class="auto-style14">  
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server"   
+ControlToValidate="TextBox2" ErrorMessage="*Password cannot be empty"   
+ForeColor="Red"></asp:RequiredFieldValidator>  
+                    </td>
+                </tr>  
+                <tr>  
+                    <td class="auto-style20">  
+ </td>  
+                    <td class="auto-style21">  
+                        <asp:Button ID="Button1" runat="server" Text="Log In" onclick="Button1_Click" BackColor="#33CC33" CssClass="auto-style23" />  
+                    </td> 
+                    <td class="auto-style22">  
+                        </td>  
+                </tr>  
+                <tr>  
+                    <td class="auto-style11">  
+                        &nbsp;</td>  
+                    <td class="auto-style2">  
+                        <asp:Label ID="Label1" runat="server" CssClass="auto-style19"></asp:Label>  
+                    </td>  
+                    <td class="auto-style18">  
+                        &nbsp;</td>  
+                </tr>  
+            </table>  
+        </div>  
+        </center>
+        <div>
+            <asp:ContentPlaceHolder ID="login" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

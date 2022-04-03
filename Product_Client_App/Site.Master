@@ -1,0 +1,88 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Product_Client_App.SiteMaster" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">  
+<head runat="server">  
+    <title></title>  
+    <asp:ContentPlaceHolder ID="head" runat="server">  
+    </asp:ContentPlaceHolder>  
+    <style>  
+      body{width:100%; background-color:Silver;}  
+      .page-wrapper{width:700px; background-color:Orange; padding:0px; height:auto; overflow:hidden;}  
+      .header{height:40px; width:99%; padding:1%; background-color:Green; color:White; font-family:Segoe UI; font-size:30px;}  
+      .menu{height:40px; width:99%; padding:1%; background-color:White; color:White; font-family:Segoe UI; font-size:14px; clear:both; float:left; text-align:left;}  
+      .footer{height:30px; width:99%; padding:1%; background-color:Black; color:White; font-family:Segoe UI; font-size:12px; text-align:left; vertical-align:bottom; clear:both;}  
+      .button{width:110px; height:30px; border-style:none; background-color:Green; font-family:Verdana; font-size:15px; color:White;}  
+      .button:hover{background-color:Black;}  
+      .textBox{width:400px; background-color:White; border:1px Solid Navy; padding:5px; color:Black; font-family:Segoe UI; }  
+      .linkbutton{width:120px; padding:6px; background-color:Green;color:White; font-family:Verdana; font-size:11px; margin-right:1px; margin-top:2px; text-decoration:none;}  
+      .linkbutton:hover{background-color:Orange;}  
+        .auto-style1 {
+            width: 776px;
+            background-color: Orange;
+            padding: 0px;
+            height: auto;
+            overflow: hidden;
+        }
+        .auto-style2 {
+            height: 23px;
+            width: 98%;
+            padding: 1%;
+            background-color: White;
+            color: White;
+            font-family: Segoe UI;
+            font-size: 14px;
+            clear: both;
+            float: left;
+            text-align: left;
+        }
+        .auto-style3 {
+            height: 30px;
+            width: 99%;
+            padding: 1%;
+            background-color: Black;
+            color: White;
+            font-family: Segoe UI;
+            font-size: 12px;
+            text-align: center;
+            vertical-align: bottom;
+            clear: both;
+        }
+    </style>  
+</head>  
+<body>  
+    <form id="form1" runat="server">  
+    <center>  
+    <div class="auto-style1">  
+    <div class="header">  
+    CRUD Operation Using WCF Service  
+    </div>  
+    <div class="auto-style2">  
+    <table style="float:left">  
+    <tr>  
+    <td><a href="AddProduct.aspx" class="linkbutton" >AddProduct</a></td>  
+    <td><a href="UpdateProduct.aspx" class="linkbutton" >UpdateProduct</td>  
+    <td><a href="DeleteProduct.aspx" class="linkbutton" >DeleteProduct</td>  
+    <td><a href="DisplayProducts.aspx" class="linkbutton" >DisplayProduct</td>  
+    <td><a href="AddNewSupplier.aspx" class="linkbutton" >AddSupplier</a></td>  
+    <td><a href="UpdateSupplierDetail.aspx" class="linkbutton" >UpdateSupplier</td>  
+    <td><a href="DeleteSupplier.aspx" class="linkbutton" >DeleteSupplier</td>  
+    <td><a href="DisplaySupplierRecord.aspx" class="linkbutton" >DisplaySupplier</td>  
+    </tr>  
+    </table>
+    
+    </div>  
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">  
+          
+        </asp:ContentPlaceHolder>  
+        <div class="auto-style3">  
+        <asp:Button ID="Button1" runat="server" Text="Logout" OnClick="Button1_Click" />
+        </div>  
+    </div>  
+    </center> 
+     
+    </form>  
+</body>  
+</html>  
